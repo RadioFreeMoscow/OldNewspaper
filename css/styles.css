@@ -1,0 +1,26 @@
+body {
+  background:
+      url('img-lg-vert-border.png') repeat-y top left,
+      url('img-lg-vert-border.png') repeat-y right 100px;
+}
+
+.border {
+  background-image: url('../images/horizontalborder.png');
+  background-size: 30% 70%;
+  background-repeat: repeat-x;
+}
+
+.weather{
+  text-align: right;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  flex-direction: column;
+}
+
+.stories {
+  flex-grow: 3;
+}
