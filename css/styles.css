@@ -1,16 +1,67 @@
+
+/*fonts{
+  font-family: 'Special Elite', cursive;
+  font-family: 'Nixie One', cursive;
+  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'IM Fell DW Pica SC', serif;
+
+}*/
+
+
 body {
-  background:
-      url('img-lg-vert-border.png') repeat-y top left,
-      url('img-lg-vert-border.png') repeat-y right 100px;
+  font-family: 'IM Fell DW Pica SC', serif;
+
+
+}
+
+.navflex{
+  flex-grow: 1;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-content: space-between;
+  justify-content: center;
+}
+
+.nav {
+  flex-grow: 1;
+}
+
+.motto {
+  font-style: italic;
+
+}
+
+.pipe {
+  font-size: 1.5em;
+}
+
+.title {
+  font-size: 0.5em;
+  width: 50%;
+  margin: 0 auto;
+
 }
 
 .border {
   background-image: url('../images/horizontalborder.png');
   background-size: 30% 70%;
   background-repeat: repeat-x;
+  height: .7em;
+  width: 100%;
+
 }
 
 .weather{
+  text-align: right;
+  border-style: solid;
+  display:inline;
   text-align: right;
 }
 
@@ -22,5 +73,16 @@ body {
 }
 
 .stories {
-  flex-grow: 3;
+
+  font-size: 0.7em;
+  -moz-column-count: 4;
+  -moz-columns: 4;
+  -webkit-columns: 4;
+  columns: 4;
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    -webkit-column-rule: 4px outset #000000; /* Chrome, Safari, Opera */
+    -moz-column-rule: 4px outset #000000; /* Firefox */
+    column-rule: 4px outset #000000;
 }
